@@ -4,6 +4,8 @@ Gestion du cache
 const staticAssets = [
     './',
     './manifest.json',
+    './assets/css/',
+    './assets/img/'
 ];
 //
 
