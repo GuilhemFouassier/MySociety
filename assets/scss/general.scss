@@ -1,0 +1,123 @@
+@import 'variables.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    background-color: $color-yellow;
+    padding-top: 65px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.topbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:15px 20px;
+    border-bottom: 2px solid $color-black;
+    background-color: $color-yellow;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    a.logo{
+        display: block;
+        width: 136px;
+        img{
+            width: 100%;
+        }
+    }
+    .user{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a{
+            display: block;
+            height: 30px;
+            img{
+                height: 30px;
+            }
+            margin-left: 13px;
+        }
+    }
+}
+
+header{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 20px;
+    background-color: $color-black;
+    nav{
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            a{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 9px;
+                color: $color-yellow;
+                text-transform: uppercase;
+                font-weight: 600;
+                text-align: center;
+                letter-spacing: 0.1em;
+                text-decoration: none;
+                position: relative;
+                z-index: 1;
+                &:focus, &:visited{
+                    text-decoration: none;
+                    color: $color-yellow; 
+                }
+                &::before{
+                    content: '';
+                    display: block;
+                    width: 67px;
+                    height: 61px;
+                    background-color: $color-yellow;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: -1;
+                    border-radius: 5px;
+                    opacity: 0;
+                }
+                &.active{
+                    color: $color-black;
+                    &::before{
+                        opacity: 1;
+                    }
+                    img{
+                        filter: brightness(0%);
+                    }
+                }
+                img{
+                    height: 25px;
+                    margin-bottom: 10px;
+                }
+                &.share-subject{
+                    width: 70px;
+                    height: 70px;
+                    justify-content: center;
+                    background-color: $color-blue;
+                    border-radius: 10px;
+                    position: relative;
+                    top: -15px;
+                    img{
+                        height: 35px;
+                    }
+                }
+            }
+        }
+    }
+}

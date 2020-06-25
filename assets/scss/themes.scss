@@ -1,0 +1,91 @@
+@import 'general.scss';
+@import 'fonts.scss';
+@import 'variables.scss';
+
+body {
+    background-color: $color-yellow;
+
+    main {
+        width: 100%;
+        padding: 0 15px;
+        padding-top: 45px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 90px;
+
+        form{
+            input{
+                line-height: 50px;
+                width: 100%;
+                background-color: $color-white;
+                padding: 0 20px 0 50px;
+                background-image: url(../img/icons/search.svg);
+                background-repeat: no-repeat;
+                background-position: 20px center;
+                background-size: 19px;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                color: $color-black;
+                border: none;
+                border-radius: 100px;
+                margin-bottom: 10px;
+                &::placeholder{
+                    color: rgba(0,0,0,0.2);
+                }
+            }
+        }
+        section{
+            h2 {
+                font-family: 'Josefin Slab', serif;
+                font-size: 24px;
+                font-weight: 700;
+                margin: 20px 0 20px;
+            }
+            .wrapper{
+                display: flex;
+                flex-wrap: wrap;
+                a{
+                    display: flex;
+                    align-items: center;
+                    width: calc(100% / 2 - 10px);
+                    background-color: $color-white;
+                    height: 74px;
+                    border-radius: 10px;
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: $color-black;
+                    text-decoration: none;
+                    padding: 0 15px;
+                    position: relative;
+                    &.fav{
+                        &:before{
+                            content: '';
+                            display: block;
+                            width:33px;
+                            height: 33px;
+                            background-image: url(../img/icons/fav.svg);
+                            background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: contain;
+                            position: absolute;
+                            top: -10px;
+                            left: -15px;
+                        }
+                    }
+                    &:nth-of-type(2n){
+                        margin-left: 20px;
+                    }
+                    &+a+a{
+                        margin-top: 23px;
+                    }
+                    img{
+                       height: 40px; 
+                       margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,102 @@
+@import 'general.scss';
+@import 'fonts.scss';
+@import 'variables.scss';
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: $color-yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 15px;
+    text-align: center;
+    .introduction{
+        h1{
+            font-family: 'Josefin Slab', serif;
+            font-size: 30px;
+            font-weight: 700;
+        }
+        p{
+            margin: 20px 0 0;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+    }
+    form{
+        margin-top: 50px;
+        label{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            margin: 0 0 15px;
+            display: block;
+        }
+        input{
+            display: block;
+            line-height: 50px;
+            width: 100%;
+            max-width: 220px;
+            background-color: $color-white;
+            border: none;
+            border-radius: 100px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            text-align: center;
+            margin: 0 auto;
+            &::placeholder{
+                color: $color-placeholder;
+            }
+            &:focus{
+                outline: none;
+                text-decoration: none;
+            }
+        }
+        a{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            display: inline-block;
+            margin: 10px auto;
+            text-decoration: underline;
+            color: #000;
+        }
+        .separator{
+            font-family: 'Josefin Slab', serif;
+            font-size: 24px;
+            font-weight: 700;
+            margin: 20px 0;
+            text-transform: uppercase;
+        }
+        .button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 60px;
+            border: none;
+            border-radius: 100px;
+            width: 100%;
+            max-width: 220px;
+            margin: 20px auto;
+            background-color: #000;
+            color: $color-yellow;
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+            text-decoration: none;
+            &:focus{
+                outline: none;
+                text-decoration: none;
+            }
+            img{
+                display: inline-block;
+                width: 34px;
+                margin-right: 11px;
+            }
+        }
+    }
+}

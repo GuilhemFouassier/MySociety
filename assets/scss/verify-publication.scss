@@ -1,0 +1,36 @@
+@import 'general.scss';
+@import 'fonts.scss';
+@import 'variables.scss';
+
+.verify-publication {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            margin: 60px auto 0;
+        }
+
+        p {
+            width: 70%;
+            margin: 40px auto;
+            font-family: 'Josefin Slab', serif;
+            font-size: 24px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        a {
+            padding-bottom: 10px;
+            border-bottom: 1px solid $color-black;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $color-black;
+        }
+    }
+}
