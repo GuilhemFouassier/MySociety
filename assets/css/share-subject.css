@@ -101,7 +101,12 @@ header {
         background-color: #9ADAF5;
         border-radius: 10px;
         position: relative;
-        top: -15px; }
+        top: -15px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 60px;
+        font-weight: 300;
+        color: #000000;
+        letter-spacing: initial; }
         header nav ul a.share-subject img {
           height: 35px; }
 
@@ -536,7 +541,27 @@ body {
       margin: 30px auto 0;
       display: flex;
       justify-content: center; }
-      body main section.final .final__buttons-block button, body main section.final .final__buttons-block a {
+      body main section.final .final__buttons-block .modify-btn {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 160px;
+        height: 55px;
+        margin: 0 6px;
+        border-radius: 100px;
+        border: 2px solid #000000;
+        background-color: transparent;
+        color: #000000;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 12px;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.3em; }
+        body main section.final .final__buttons-block .modify-btn img {
+          width: 20px;
+          margin: 0 0 0 10px; }
+      body main section.final .final__buttons-block .check-btn {
         display: inline-flex;
         justify-content: center;
         align-items: center;
@@ -553,7 +578,7 @@ body {
         text-transform: uppercase;
         text-decoration: none;
         letter-spacing: 0.3em; }
-        body main section.final .final__buttons-block button img, body main section.final .final__buttons-block a img {
+        body main section.final .final__buttons-block .check-btn img {
           margin: 0 0 0 10px; }
     body main section.final .final__modify {
       display: none;

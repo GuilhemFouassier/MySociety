@@ -659,7 +659,32 @@ body {
                         margin: 30px auto 0;
                         display: flex;
                         justify-content: center;
-                        button, a {
+
+                        .modify-btn {
+                            display: inline-flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 160px;
+                            height: 55px;
+                            margin: 0 6px;
+                            border-radius: 100px;
+                            border: 2px solid $color-black;
+                            background-color: transparent;
+                            color: $color-black;
+                            font-family: 'Montserrat', sans-serif;
+                            font-weight: 600;
+                            font-size: 12px;
+                            text-transform: uppercase;
+                            text-decoration: none;
+                            letter-spacing: 0.3em;
+
+                            img {
+                                width: 20px;
+                                margin: 0 0 0 10px;
+                            }
+                        }
+
+                        .check-btn {
                             display: inline-flex;
                             justify-content: center;
                             align-items: center;
@@ -676,9 +701,9 @@ body {
                             text-transform: uppercase;
                             text-decoration: none;
                             letter-spacing: 0.3em;
-                            
+
                             img {
-                                margin: 0 0 0 10px;
+                                margin: 0 0 0 10px; 
                             }
                         }
                     }

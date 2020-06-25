@@ -101,7 +101,12 @@ header {
         background-color: #9ADAF5;
         border-radius: 10px;
         position: relative;
-        top: -15px; }
+        top: -15px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 60px;
+        font-weight: 300;
+        color: #000000;
+        letter-spacing: initial; }
         header nav ul a.share-subject img {
           height: 35px; }
 
