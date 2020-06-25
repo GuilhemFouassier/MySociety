@@ -7,6 +7,10 @@
     list-style: none;
 }
 
+html{
+    padding: env(safe-area-inset-top);
+}
+
 body{
     background-color: $color-yellow;
     padding-top: 65px;

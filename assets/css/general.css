@@ -6,6 +6,9 @@
   box-sizing: border-box;
   list-style: none; }
 
+html {
+  padding: env(safe-area-inset-top); }
+
 body {
   background-color: #F5E8B7;
   padding-top: 65px;
