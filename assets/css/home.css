@@ -189,7 +189,8 @@ body {
           background-color: #A3E4B1;
           position: absolute;
           bottom: -2px;
-          right: -2px; }
+          right: -2px;
+          border-radius: 100px; }
         body main .chat .wrapper a img {
           width: 100%; }
         body main .chat .wrapper a.more {
