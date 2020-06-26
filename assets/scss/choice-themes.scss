@@ -114,6 +114,7 @@ main {
             padding: 5px;
             border-bottom: 1px solid #000;
             text-decoration: none;
+            color: $color-black;
             &:focus, &:visited{
                 outline: none;
                 text-decoration: none;
