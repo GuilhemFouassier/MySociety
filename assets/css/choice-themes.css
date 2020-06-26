@@ -157,11 +157,11 @@ body {
           transform: translate(-50%, -50%);
           transition: all 0.3s ease-in-out;
           border-radius: 15px;
-          border: 2px solid #000000;
           z-index: -1; }
         body main .wrapper .item.active:before {
           width: 100%;
-          height: 100%; }
+          height: 100%;
+          border: 2px solid #000000; }
         body main .wrapper .item:nth-of-type(2n) {
           margin-left: 30px; }
         body main .wrapper .item img {
